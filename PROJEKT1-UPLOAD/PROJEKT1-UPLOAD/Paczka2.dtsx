@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Paczka2"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{5F18B050-F74F-400A-9EBB-406AAFB1E6BE}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{E50E38E5-E1D9-4F49-829E-DF94436B4716}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -36,7 +36,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="1045"
+              localeId="2057"
               name="Flat File Source"
               usesDispositions="true"
               version="1">
@@ -64,12 +64,11 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Sex]"
-                      codePage="1250"
-                      dataType="str"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sex]"
-                      length="1"
+                      length="50"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Sex]"
                       name="Sex"
                       truncationRowDisposition="FailComponent">
@@ -226,8 +225,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Rings ]"
-                      codePage="1250"
-                      dataType="str"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Rings ]"
@@ -251,9 +249,8 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sex]"
-                      codePage="1250"
-                      dataType="str"
-                      length="1"
+                      dataType="wstr"
+                      length="50"
                       name="Sex" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Length]"
@@ -285,8 +282,7 @@
                       name="Shell weight" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Rings ]"
-                      codePage="1250"
-                      dataType="str"
+                      dataType="wstr"
                       length="50"
                       name="Rings " />
                   </externalMetadataColumns>
@@ -336,7 +332,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Abalone]</property>
+                  name="OpenRowset">[OLE DB Destination]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -394,9 +390,8 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sex]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="1"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="Sex"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sex]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Sex]" />
@@ -444,8 +439,7 @@
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Shell weight]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rings ]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
+                      cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Rings "
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rings ]"
@@ -455,9 +449,8 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sex]"
-                      codePage="1250"
-                      dataType="str"
-                      length="1"
+                      dataType="wstr"
+                      length="50"
                       name="Sex" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
@@ -489,8 +482,7 @@
                       name="Shell weight" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rings ]"
-                      codePage="1250"
-                      dataType="str"
+                      dataType="wstr"
                       length="50"
                       name="Rings " />
                   </externalMetadataColumns>
