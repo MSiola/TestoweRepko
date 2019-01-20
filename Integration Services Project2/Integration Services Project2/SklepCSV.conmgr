@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Flat File Connection Manager"
+  DTS:ObjectName="SklepCSV"
   DTS:DTSID="{9F12684E-48DC-4354-9860-05C70F869A8B}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>

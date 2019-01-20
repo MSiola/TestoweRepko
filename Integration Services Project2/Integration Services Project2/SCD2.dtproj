@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-UN509O6</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt9rWM7SrSEmeYkdtOqgIYAAAAAACAAAAAAADZgAAwAAAABAAAACspkWXCLZFtkX6zGnRJNNPAAAAAASAAACgAAAAEAAAAMGyVGdtCR+QsGOmKCYHgdWIAAAAD7IOSnEcva3KbKwzOns5Yul3LdQ4HYdwyMWNK2SBL2kI+ZuwOTZy2rIxPI63uWoDk1gtWq4SfdOvUqkTDveo7S/GPh3LYuVOcgPerXAzo4JfWuGx51lUkvdYXhdmaKivrDzc36FPPrNGrrFEa+iBGI2syLo/GW981Hwi+bgy/jepuu+Gj7NXohQAAACN9+lTzqh35pXT0pX5qLKZhKKe/A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt9rWM7SrSEmeYkdtOqgIYAAAAAACAAAAAAADZgAAwAAAABAAAAAfD9IJvBiX4xEJMIF2EByKAAAAAASAAACgAAAAEAAAAEpELuwJbnmymW3OVGQ0/VeIAAAAWzmXmsz0NNPp5cKsZFVwODbBuVnMPoUy1+iu8TQSM5XWQrjtXQdQExiHiP8xw97U9oUxW3iNqEpHLKTz/KoZwUkAdRHMIQuVd0Y4f3BMwXOaoAWmumGlaZlQv5Z3AeFgQcLAssP9rOo32H56wC5gxYZLbjvFbNOrdsZGvQES6xzO7z/1mIby4BQAAAAWujhZ6+hH6+oPjZCtab+MQG4Baw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,7 +35,7 @@
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="ObszarCSV.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="PracownikCSV.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Flat File Connection Manager.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="SklepCSV.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -186,6 +186,8 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">
+                </SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -366,6 +368,8 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">
+                </SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -399,7 +403,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.AlwaysCheckForRowDelimiters">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.AlwaysCheckForRowDelimiters">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -414,7 +418,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.CodePage">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.CodePage">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -429,7 +433,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.ColumnNamesInFirstDataRow">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.ColumnNamesInFirstDataRow">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -444,7 +448,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -459,7 +463,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.DataRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.DataRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -474,7 +478,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.Format">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.Format">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -489,7 +493,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.HeaderRowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.HeaderRowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -505,7 +509,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.HeaderRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.HeaderRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -520,7 +524,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.LocaleID">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.LocaleID">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -535,7 +539,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.RowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.RowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -546,10 +550,12 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">
+                </SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.TextQualifier">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.TextQualifier">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -564,7 +570,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.Unicode">
+            <SSIS:Parameter SSIS:Name="CM.SklepCSV.Unicode">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -587,10 +593,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{0635F7AA-C3C7-412D-BE75-E9BB18FACA48}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{989EF10B-175A-473C-B1B3-CB335F433EF5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
